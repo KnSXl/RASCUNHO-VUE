@@ -18,6 +18,11 @@ const routes = [
     component: () => import('../views/ContactsView.vue')
   },
   {
+    path: '/rascunho',
+    name: 'rascunho',
+    component: () => import('../views/RascunhoView.vue')
+  },
+  {
     path: '/:catchAll(.*)',
     name: 'notfound',
     component: () => import('../views/NotFoundView.vue')
